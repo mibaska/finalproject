@@ -18,7 +18,7 @@ function Login() {
           <label for="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
           <button type="submit">Submit</button>
-      Or Signup <a href="./signup">here
+      Or Signup <a href="/signup">here
       </a>
         </div>
       </div>
