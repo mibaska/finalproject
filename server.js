@@ -1,5 +1,6 @@
 var express = require("express");
 var mysql = require("mysql");
+var path = require('path');
 var app = express();
 var db = require("./models");
 var PORT = process.env.PORT || 3001;
@@ -26,7 +27,7 @@ connection.connect(function(err){
 
 });
 
-express.static(path_join(__dirname, '../client/build'));
+express.static(path.join(__dirname, '../client/build'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
