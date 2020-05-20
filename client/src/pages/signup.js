@@ -19,7 +19,7 @@ function Signup() {
           <label for="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
           <button type="submit">Submit</button>
-      Or Login <a href="/">here
+      Or Login <a href="/#/">here
         </a>
 
         </div>

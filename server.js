@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, '/client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/api/villagers", function(req, res) {
+app.get("/#/api/villagers", function(req, res) {
   db.Villagers.findAll({}).then(function(dbVillager) {
     res.json(dbVillager);
   });
