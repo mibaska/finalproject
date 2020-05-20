@@ -68,7 +68,7 @@ function Calendar() {
                     <li>7</li>
                     <li>8</li>
                     <li>9</li>
-                    <li><span className="active">10</span></li>
+                    <li>10</li>
                     <li>11</li>
                     <li>12</li>
                     <li>13</li>
@@ -81,7 +81,7 @@ function Calendar() {
                     <li>20</li>
                     <li>21</li>
                     <li>22</li>
-                    <li>23</li>
+                    <li><span className="active">23</span></li>
                     <li>24</li>
                     <li>25</li>
                     <li>26</li>
