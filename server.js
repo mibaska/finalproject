@@ -27,7 +27,7 @@ connection.connect(function(err){
 
 });
 
-express.static(path(__dirname, '../client/build'));
+express.static(path('./client/build'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
