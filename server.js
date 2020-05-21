@@ -1,7 +1,6 @@
 var express = require("express");
 var mysql = require("mysql");
 var path = require('path');
-var routes = require("./routes");
 var app = express();
 var db = require("./models");
 var PORT = process.env.PORT || 3001;
@@ -32,7 +31,11 @@ app.use(express.static(path.join(__dirname, '/client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(routes);
+app.get("/api/villagers", function(req, res) {
+  db.Villagers.findAll({}).then(function(dbVillager) {
+    res.json(dbVillager);
+  });
+});
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
