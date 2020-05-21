@@ -1,7 +1,20 @@
-import React from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+import API from "../utils/API";
 
 function EditVillager() {
+  const [villagers, setVillagers] = useState([])
+
+  useEffect(() => {
+    loadVillagers()
+  }, [])
+
+  function loadVillagers() {
+    API.getBooks()
+      .then(res => 
+        setVillagers(res.data)
+      )
+      .catch(err => console.log(err));
+  };
   return (
     <div>
       <div>
@@ -19,6 +32,7 @@ function EditVillager() {
       <div id="agrippa"></div>
     </div>
   );
+  
 }
 
 export default EditVillager;

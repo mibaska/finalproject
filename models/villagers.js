@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Villagers = sequelize.define("Todo", {
+  var Villagers = sequelize.define("Villagers", {
     villager_name: {
       type: DataTypes.STRING,
       allowNull: false
