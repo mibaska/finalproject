@@ -16,7 +16,6 @@ function EditVillager() {
       )
       .catch(err => console.log(err));
   };
-  agrippa.appendChild(res.data)
   return (
     <div>
       <div>
