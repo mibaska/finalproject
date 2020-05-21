@@ -9,7 +9,7 @@ function EditVillager() {
   }, [])
 
   function loadVillagers() {
-    API.getBooks()
+    API.getVillagers()
       .then(res => 
         setVillagers(res.data)
       )
