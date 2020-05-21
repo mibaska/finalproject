@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 
 function EditVillager() {
+  var agrippa = document.getElementById("agrippa");
   const [villagers, setVillagers] = useState([])
 
   useEffect(() => {
@@ -15,6 +16,7 @@ function EditVillager() {
       )
       .catch(err => console.log(err));
   };
+  agrippa.appendChild(res.data)
   return (
     <div>
       <div>
