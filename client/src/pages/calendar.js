@@ -17,7 +17,7 @@ function Calendar() {
           <br/>
           <br/>
           <br/>
-          <img src="" alt="images/Portia_NewLeaf_Official.png" className="center"/>
+          <img src="images/Portia_NewLeaf_Official.png" alt="animalcrossing" className="center"/>
           <h2>Portia</h2>
           <p>It will be a while.</p>
         </div>
