@@ -11,7 +11,8 @@ function EditVillager() {
   function loadVillagers() {
     API.getVillagers()
       .then(res => 
-        setVillagers(res.data)
+        setVillagers(res.data),
+        console.log(res.data)
       )
       .catch(err => console.log(err));
   };
