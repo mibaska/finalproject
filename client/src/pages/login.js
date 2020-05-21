@@ -17,7 +17,7 @@ function Login() {
           <input type="email" id="email" placeholder="Enter email" name="email" />
           <label for="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
-          <button type="submit">Submit</button>
+          <button type="submit"><a href="/#/editVillager">Submit</a></button>
       Or Signup <a href="/#/signup">here
       </a>
         </div>

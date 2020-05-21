@@ -5,27 +5,21 @@ function Calendar() {
     <div>
       <div className="split left">
         <div className="centered">
-          <img src="images/_4REuQH4_400x400.jpg" alt="animalcrossing" className="center"/>
-          <h2>Isabelle</h2>
+          <img src="images/Peggy_NewLeaf_Official.png" alt="animalcrossing" className="center"/>
+          <h2>Peggy</h2>
           <p>HAPPY BIRTHDAY!</p>
           <br/>
           <br/>
           <br/>
-          <img src="https://i.pinimg.com/originals/0d/69/a9/0d69a941ad981e610ccda6e81f9e52d9.png" alt="animalcrossing" className="center"/>
-            <h2>Kotaku</h2>
-            <p>Upcoming Birthday</p>
-            <br/>
-            <br/>
-            <br/>
-            <img src="https://i.redd.it/8yg17wk81fe41.jpg" alt="animalcrossing" className="center"/>
-            <h2>Marina</h2>
-            <p>Upcoming Birthday</p>
-            <br/>
-            <br/>
-            <br/>
-            <img src="https://i.pinimg.com/originals/f9/0c/64/f90c647e9908e3b30cf316973c903a70.png" alt="animalcrossing" className="center"/>
-            <h2>Squeeky</h2>
-            <p>Upcoming Birthday</p>
+          <img src="images/Renée_NH.png" alt="animalcrossing" className="center"/>
+          <h2>Renee</h2>
+          <p>Upcoming Birthday!</p>
+          <br/>
+          <br/>
+          <br/>
+          <img src="" alt="images/Portia_NewLeaf_Official.png" className="center"/>
+          <h2>Portia</h2>
+          <p>It will be a while.</p>
         </div>
       </div>
 
