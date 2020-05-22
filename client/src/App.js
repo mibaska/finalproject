@@ -4,7 +4,7 @@ import Signup from "./pages/signup";
 import Login from "./pages/login";
 import Calendar from "./pages/calendar";
 import editVillager from "./pages/editVillager";
-import Detail from "./pages/detail"
+import Detail from "./pages/Detail"
 
 function App() {
   return (
