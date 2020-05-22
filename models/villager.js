@@ -8,6 +8,6 @@ const villagerSchema = new Schema({
   villager_style_beth: { type: String, required: false }
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const Villager = mongoose.model("Villager", villagerSchema);
 
-module.exports = Book;
+module.exports = Villager;
