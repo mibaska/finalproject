@@ -8,6 +8,7 @@
     "concurrently": "^5.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "mongoose": "^5.9.15",
     "mysql": "^2.18.1",
     "mysql2": "^1.5.1",
     "nodemon": "^2.0.3",
@@ -21,7 +22,7 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "seed": "node mysql-files/villagersDB.sql",
+    "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"

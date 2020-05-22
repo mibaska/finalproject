@@ -5,4 +5,9 @@ router.route("/")
   .get(villagersController.findAll)
   .post(villagersController.create);
 
+router
+  .route("/:id")
+  .get(villagersController.findById)
+  .put(villagersController.update)
+
 module.exports = router;

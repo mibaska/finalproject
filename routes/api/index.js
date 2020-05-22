@@ -2,6 +2,6 @@ const router = require("express").Router();
 const villagerRoutes = require("./villagers");
 
 // Book routes
-router.use("/villagers", villagerRoutes);
+router.use("/#/editVillager", villagerRoutes);
 
 module.exports = router;
