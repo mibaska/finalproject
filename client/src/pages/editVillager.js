@@ -35,7 +35,7 @@ function EditVillager() {
       <List>
         {villagers.map(villager => (
           <ListItem key={villager._id}>
-            <Link to={"/#/editVillagers/" + villager._id}>
+            <Link to={"/#/editVillager/" + villager._id}>
               <strong>
                 {villager.villager_name}, {villager.villager_birthday}
               </strong>
