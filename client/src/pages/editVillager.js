@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
+import { Link } from "react-router-dom";
+import { List, ListItem } from "../components/List";
 
 function EditVillager() {
-  var agrippa = document.getElementById("agrippa");
   const [villagers, setVillagers] = useState([])
 
   useEffect(() => {
@@ -30,7 +31,19 @@ function EditVillager() {
           <a href="/#/calendar" className="button">Calendar</a>
         </div>
       </div>
-      <div id="agrippa"></div>
+      <div id="agrippa">
+      <List>
+        {villagers.map(villager => (
+          <ListItem key={villager._id}>
+            <Link to={"/villagers/" + villager._id}>
+              <strong>
+                {villager.villager_name}, {villager.villager_birthday}
+              </strong>
+            </Link>
+          </ListItem>
+        ))}
+      </List>
+      </div>
     </div>
   );
   
