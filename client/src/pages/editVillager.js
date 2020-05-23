@@ -33,7 +33,7 @@ function Villagers() {
           <a href="/#/" className="button">Logout</a>
         </div>
       </div>
-      <div id="agrippa">
+      <div id="agrippa" className="container">
       {/* <List>
         {villagers.map(villager => (
           <ListItem key={villager.id}>
