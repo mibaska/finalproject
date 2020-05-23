@@ -4,7 +4,7 @@ function Signup() {
   return (
 
     <div>
-      <div class="container">
+      <div className="container">
         <div>
           <h1>Signup Form</h1>
         </div>
@@ -17,6 +17,8 @@ function Signup() {
           <label for="email">Email:</label>
           <input type="email" id="email" placeholder="Enter email" name="email" />
           <label for="pwd">Password:</label>
+          <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
+          <label for="pwd"> Confirm Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
           <button type="submit"><a href="/#/">Submit</a></button>
       Or Login <a href="/#/">here
