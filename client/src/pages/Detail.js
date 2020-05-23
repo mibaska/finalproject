@@ -5,12 +5,12 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
 function Detail(props) {
-  const [villager, setvillager] = useState({})
+  const [villager, setVillager] = useState({})
 
   const {id} = useParams()
   useEffect(() => {
-    API.getvillager(id)
-      .then(res => setvillager(res.data))
+    API.getVillager(id)
+      .then(res => setVillager(res.data))
       .catch(err => console.log(err));
   }, [])
 
@@ -37,7 +37,7 @@ function Detail(props) {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/#/editVillager">← Back to Villagers</Link>
+            <Link to="/editVillager">← Back to Villagers</Link>
           </Col>
         </Row>
       </Container>

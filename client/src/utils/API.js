@@ -6,8 +6,5 @@ export default {
   },
   getVillager: function(id) {
     return axios.get("/api/villagers/" + id);
-  },
-  saveVillager: function(villagerData) {
-    return axios.post("/api/villagers", villagerData);
   }
 };

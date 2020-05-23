@@ -31,7 +31,6 @@ function Calendar() {
             <br/>
             <h1>Calendar</h1>
 
-                <div className="month"/>
                     <ul>
                         <li>
                             May<br/>
@@ -39,7 +38,7 @@ function Calendar() {
                         </li>
                     </ul>
                 </div>
-
+              <div>
                 <ul className="weekdays">
                     <li>Mo</li>
                     <li>Tu</li>
@@ -51,6 +50,10 @@ function Calendar() {
                 </ul>
 
                 <ul className="days">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -83,6 +86,7 @@ function Calendar() {
                     <li>30</li>
                     <li>31</li>
                 </ul>
+            </div>
         </div>
     </div>
   );

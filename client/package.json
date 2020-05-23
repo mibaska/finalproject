@@ -2,7 +2,12 @@
   "name": "mern",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:3001/",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:5002",
+      "secure": false
+    }
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "react": "^16.6.3",

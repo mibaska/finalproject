@@ -1,7 +1,6 @@
 var express = require("express");
 var mysql = require("mysql");
 var path = require('path');
-var cors = require('cors');
 var app = express();
 var db = require("./models");
 var PORT = process.env.PORT || 3001;
@@ -27,13 +26,22 @@ connection.connect(function(err) {
   });
 });
 
-app.use(cors())
 app.use(express.static(path.join(__dirname, '/client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 app.get("/api/villagers", function(req, res) {
   db.Villagers.findAll({}).then(function(dbVillager) {
+    res.json(dbVillager);
+  });
+});
+app.get("/api/villagers/:id", function(req, res) {
+  db.Villagers.findOne({
+    where: {
+    id: req.params.id
+    }
+  }).then(function(dbVillager) {
     res.json(dbVillager);
   });
 });
