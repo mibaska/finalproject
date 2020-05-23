@@ -46,9 +46,9 @@ function Villagers() {
         ))}
       </List> */}
         <ul>
-          <li>Peggy, May-23, Cute, Active</li>
-          <li>Portia, Oct-25, Elegant, Gorgeous</li>
-          <li>Renee, May-28, Cool, Active</li>
+          <li><strong>Peggy, May-23, Cute, Active</strong></li>
+          <li><strong>Portia, Oct-25, Elegant, Gorgeous</strong></li>
+          <li><strong>Renee, May-28, Cool, Active</strong></li>
           <li>Admiral, Jan-27, Cool</li>
           <li>Agent S, Jul-2, Active, Simple</li>
           <li>Agnes, Apr-21, Simple, Elegant</li>
