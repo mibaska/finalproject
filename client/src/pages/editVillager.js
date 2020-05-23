@@ -46,6 +46,9 @@ function Villagers() {
         ))}
       </List> */}
         <ul>
+          <li>Peggy, May-23, Cute, Active</li>
+          <li>Portia, Oct-25, Elegant, Gorgeous</li>
+          <li>Renee, May-28, Cool, Active</li>
           <li>Admiral, Jan-27, Cool</li>
           <li>Agent S, Jul-2, Active, Simple</li>
           <li>Agnes, Apr-21, Simple, Elegant</li>
@@ -319,7 +322,6 @@ function Villagers() {
           <li>Pecan, Sep-10, Elegant, Gorgeous</li>
           <li>Peck, Jul-25, Simple, Active</li>
           <li>Peewee, Sep-11, Active, Cool</li>
-          <li>Peggy, May-23, Cute, Active</li>
           <li>Pekoe, May-18, Elegant, Cute</li>
           <li>Penelope, Feb-5, Cute, Gorgeous</li>
           <li>Phil, Nov-27, Elegant, Cool</li>
@@ -345,7 +347,6 @@ function Villagers() {
           <li>Raddle, Jun-6, Elegant, Simple</li>
           <li>Rasher, Apr-7, Cool, Simple</li>
           <li>Raymond, Oct-1, Elegant, Cool</li>
-          <li>Renee, May-28, Cool, Active</li>
           <li>Reneigh, Jun-4, Cool, Gorgeous</li>
           <li>Rex, Jul-24, Simple, Cute</li>
           <li>Rhonda, Jan-24, Elegant, Gorgeous</li>
