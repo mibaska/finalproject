@@ -1,10 +1,4 @@
-const mongoose = require("mongoose");
 const db = require("../models");
-
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/villagers"
-);
 
 const villagerSeed = [
   {villager_name: "Admiral", villager_birthday: "2001-1-27", villager_style_aleph: "Cool", villager_style_beth: ""},
@@ -399,15 +393,3 @@ const villagerSeed = [
   {villager_name: "Zell", villager_birthday: "2001-6-7", villager_style_aleph: "Cool", villager_style_beth: "Gorgeous"},
   {villager_name: "Zucker", villager_birthday: "2001-3-8", villager_style_aleph: "Simple", villager_style_beth: "Cute"}
 ];
-
-db.Villager
-  .remove({})
-  .then(() => db.Villager.collection.insertMany(villagerSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
