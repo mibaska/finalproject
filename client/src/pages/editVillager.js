@@ -3,7 +3,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { List, ListItem } from "../components/List";
 
-function EditVillager() {
+function Villagers() {
   const [villagers, setVillagers] = useState([])
 
   useEffect(() => {
@@ -29,13 +29,14 @@ function EditVillager() {
         <div className="searchBtn">
           <button className="button">Search</button>
           <a href="/#/calendar" className="button">Calendar</a>
+          <a href="/#/" className="button">Logout</a>
         </div>
       </div>
       <div id="agrippa">
       <List>
         {villagers.map(villager => (
-          <ListItem key={villager._id}>
-            <Link to={"/#/editVillager/" + villager._id}>
+          <ListItem key={villager.id}>
+            <Link to={"/#/editVillager/" + villager.id}>
               <strong>
                 {villager.villager_name}, {villager.villager_birthday}
               </strong>
@@ -49,4 +50,4 @@ function EditVillager() {
   
 }
 
-export default EditVillager;
+export default Villagers;

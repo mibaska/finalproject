@@ -13,9 +13,9 @@ function Login() {
       <br />
       <div className="container">
         <div className="startbar" action="/action_page.php">
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input type="email" id="email" placeholder="Enter email" name="email" />
-          <label for="pwd">Password:</label>
+          <label htmlFor="pwd">Password:</label>
           <input type="password" id="pwd" placeholder="Enter password" name="pswd" />
           <button type="submit"><a href="/#/editVillager">Submit</a></button>
       Or Signup <a href="/#/signup">here

@@ -11,7 +11,7 @@ function Calendar() {
           <br/>
           <br/>
           <br/>
-          <img src="images/Renée_NH.png" alt="animalcrossing" className="center"/>
+          <img src="images/Renee_NH.png" alt="animalcrossing" className="center"/>
           <h2>Renee</h2>
           <p>Upcoming Birthday!</p>
           <br/>
@@ -33,8 +33,6 @@ function Calendar() {
 
                 <div className="month"/>
                     <ul>
-                        <li className="prev">&#10094;</li>
-                        <li className="next">&#10095;</li>
                         <li>
                             May<br/>
                             <span id="month">2020</span>

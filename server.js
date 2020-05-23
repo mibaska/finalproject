@@ -1,6 +1,7 @@
 var express = require("express");
 var mysql = require("mysql");
 var path = require('path');
+var cors = require('cors');
 var app = express();
 var db = require("./models");
 var PORT = process.env.PORT || 3001;
@@ -18,15 +19,15 @@ if(process.env.JAWSDB_URL) {
   });
 }
 
-connection.connect(function(err){
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-  console.log("connected as id " + connection.threadId);
-
+connection.connect(function(err) {
+  if (err) throw err;
+  connection.query("SELECT * FROM villagers", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+  });
 });
 
+app.use(cors())
 app.use(express.static(path.join(__dirname, '/client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

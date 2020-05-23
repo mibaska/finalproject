@@ -8,6 +8,6 @@ router.route("/")
 router
   .route("/:id")
   .get(villagersController.findById)
-  .put(villagersController.update)
+  .post(villagersController.create);
 
 module.exports = router;
