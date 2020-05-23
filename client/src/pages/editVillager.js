@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import API from "../utils/API";
+// import API from "../utils/API";
 // import { Link } from "react-router-dom";
 // import { List, ListItem } from "../components/List";
 
@@ -21,7 +21,7 @@ function Villagers() {
   return (
     <div>
       <div>
-        <div>
+        <div className="container">
           <h2>Add Your Villagers!</h2>
         </div>
         <div className="searchBox">
