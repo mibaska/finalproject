@@ -1,8 +1,7 @@
 var express = require("express");
 const mongoose = require("mongoose");
-var path = require('path');
-var app = express();
 const routes = require("./routes");
+var app = express();
 var PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
 }
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://villagers");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/villagers");
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
