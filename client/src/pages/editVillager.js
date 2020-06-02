@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
-// import API from "../utils/API";
-// import { Link } from "react-router-dom";
-// import { List, ListItem } from "../components/List";
+import API from "../utils/API";
+import { Link } from "react-router-dom";
+import { List, ListItem } from "../components/List";
 
 function Villagers() {
-  // const [villagers, setVillagers] = useState([])
+  const [villagers, setVillagers] = useState([])
 
-  // useEffect(() => {
-  //   loadVillagers()
-  // }, [])
+  useEffect(() => {
+    loadVillagers()
+  }, [])
 
-  // function loadVillagers() {
-  //   API.getVillagers()
-  //     .then(res => 
-  //       setVillagers(res.data)
-  //     )
-  //     .catch(err => console.log(err));
-  // };
+  function loadVillagers() {
+    API.getVillagers()
+      .then(res => 
+        setVillagers(res.data)
+      )
+      .catch(err => console.log(err));
+  };
     
   return (
     <div>
@@ -34,7 +34,7 @@ function Villagers() {
         </div>
       </div>
       <div id="agrippa" className="container">
-      {/* <List>
+      <List>
         {villagers.map(villager => (
           <ListItem key={villager.id}>
             <Link to={"/#/editVillager/" + villager.id}>
@@ -44,8 +44,8 @@ function Villagers() {
             </Link>
           </ListItem>
         ))}
-      </List> */}
-        <ul>
+      </List>
+        {/* <ul>
           <li><strong>Peggy, May-23, Cute, Active</strong></li>
           <li><strong>Portia, Oct-25, Elegant, Gorgeous</strong></li>
           <li><strong>Renee, May-28, Cool, Active</strong></li>
@@ -438,7 +438,7 @@ function Villagers() {
           <li>Yuka, Jul-20, Cool, Elegant</li>
           <li>Zell, Jun-7, Cool, Gorgeous</li>
           <li>Zucker, Mar-8, Simple, Cute</li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
