@@ -37,7 +37,7 @@ function Detail(props) {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/#/editVillager">← Back to Villagers</Link>
+            <Link to="/editVillager"><p className="whitebg">← Back to Villagers</p></Link>
           </Col>
         </Row>
       </Container>

@@ -120,6 +120,10 @@ ul {
   list-style-type: none;
 }
 
+.whitebg {
+  background-color: white;
+}
+
 #month{
   font-size: 28px;
 }

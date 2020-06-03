@@ -37,7 +37,7 @@ function Villagers() {
       <List>
         {villagers.map(villager => (
           <ListItem key={villager.id}>
-            <Link to={"/#/editVillager/" + villager.id}>
+            <Link to={"/editVillager/" + villager.id}>
               <strong>
                 {villager.villager_name}, {villager.villager_birthday}
               </strong>
